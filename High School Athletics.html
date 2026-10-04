@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Athletics Program: Teams for Boys and Girls</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0B2A5B;--primary-dark:#071B3D;--accent:#C8102E;--accent-dark:#9E0C24;--bg:#fff;--surface:#F3F5F8;--border:#D9DEE6;--text:#1B1F27;--muted:#5B6472;--focus:#FFB81C;--link:#0B2A5B;--head:var(--primary);--card:#fff;
+--fh:"Oswald","Arial Narrow",Arial,sans-serif;--fb:"Open Sans",Arial,Helvetica,sans-serif;--shadow:0 2px 8px rgba(11,42,91,.12);--menu:0 8px 24px rgba(0,0,0,.18);
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1420;--surface:#151d2e;--border:#2a3550;--text:#e8ecf3;--muted:#a3adc0;--link:#9db8ee;--head:#dbe6ff;--card:#18223a}}
+:root[data-theme="dark"]{--bg:#0e1420;--surface:#151d2e;--border:#2a3550;--text:#e8ecf3;--muted:#a3adc0;--link:#9db8ee;--head:#dbe6ff;--card:#18223a}
+html{scroll-padding-top:90px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.6 var(--fb)}
+a{color:var(--link)}a:hover{color:var(--accent);text-decoration:underline}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+h1,h2,h3{font-family:var(--fh);color:var(--head);line-height:1.15;margin:0 0 .5em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--focus);color:#000;padding:8px 14px;z-index:99}.skip:focus{left:8px}
+header{background:var(--primary);position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.bar{display:flex;align-items:center;gap:20px;min-height:72px}
+.logo{font:600 1.35rem var(--fh);color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:.02em}
+.logo:hover{color:#fff;text-decoration:none}
+.logo i{width:44px;height:44px;border:2px dashed #fff8;border-radius:4px;display:grid;place-items:center;font:500 .6rem var(--fb);font-style:normal;text-align:center;line-height:1.1}
+nav{margin-left:auto}
+nav>ul{list-style:none;display:flex;margin:0;padding:0;gap:2px}
+nav li{position:relative}
+nav>ul>li>a,nav>ul>li>button{font:500 1rem var(--fh);letter-spacing:.04em;text-transform:uppercase;color:#fff;background:none;border:0;padding:12px 14px;min-height:44px;cursor:pointer;text-decoration:none;display:block}
+nav>ul>li>a:hover,nav>ul>li>button:hover{color:#fff;box-shadow:inset 0 -3px var(--accent)}
+.dd{display:none;position:absolute;left:0;top:100%;background:var(--card);border-top:1px solid var(--accent);box-shadow:var(--menu);min-width:230px;list-style:none;margin:0;padding:6px 0}
+nav li.open>.dd{display:block}
+.dd a{display:block;padding:10px 16px;color:var(--text);text-decoration:none;font-size:.9rem}
+.dd a:hover{background:var(--surface);color:var(--accent)}
+.mega{width:min(720px,92vw);left:auto;right:0;grid-template-columns:repeat(3,1fr);gap:16px;padding:20px}
+nav li.open>.mega{display:grid}
+.mega h3{font-size:1rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:3px solid var(--accent);padding-bottom:4px}
+.mega ul{list-style:none;margin:0;padding:0}.mega a{padding:5px 0;font-size:.88rem}.mega a:hover{background:none}
+.util{display:flex;gap:10px;align-items:center}
+.btn{display:inline-block;font:500 1rem var(--fh);text-transform:uppercase;letter-spacing:.05em;padding:12px 24px;border-radius:4px;text-decoration:none;border:2px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer;min-height:44px}
+.btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff;text-decoration:none}
+.btn.out{background:none;border-color:#fff;padding:8px 16px}.btn.out:hover{background:#fff;color:var(--primary)}
+.btn.sec{background:none;color:var(--link);border-color:var(--primary)}.btn.sec:hover{background:var(--primary);color:#fff}
+#burger{display:none;margin-left:auto;background:none;border:2px solid #fff;color:#fff;border-radius:4px;padding:8px 12px;font:500 1rem var(--fh);min-height:44px}
+@media(max-width:960px){
+#burger{display:block}nav{display:none;position:fixed;inset:72px 0 0 0;background:var(--primary-dark);overflow:auto;margin:0;padding:16px 24px}
+nav.show{display:block}nav>ul{flex-direction:column}.util{display:none}
+.dd,.mega{position:static;box-shadow:none;width:auto}nav li.open>.mega{display:block}.mega>div{margin-bottom:12px}
+nav>ul>li>a,nav>ul>li>button{width:100%;text-align:left}}
+.hero{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff;padding:72px 0 56px}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6vw,4rem);text-transform:uppercase;letter-spacing:.01em;max-width:14ch}
+.hero p{max-width:60ch;font-size:1.1rem;opacity:.92}
+.hero .btn.sec{border-color:#fff;color:#fff}.hero .btn.sec:hover{background:#fff;color:var(--primary)}
+section{padding:56px 0}.band{background:var(--surface)}
+.sh{text-align:center;font-size:2.25rem;text-transform:uppercase}
+.sh:after{content:"";display:block;width:48px;height:4px;background:var(--accent);margin:10px auto 0}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(4,1fr);margin-top:32px}
+.tile{background:var(--card);border-radius:8px;box-shadow:var(--shadow);overflow:hidden;text-decoration:none;color:var(--text);display:block}
+.tile .art{aspect-ratio:16/9;display:grid;place-items:center;font:600 2.4rem var(--fh);color:#fff;text-transform:uppercase;transition:transform .2s}
+.tile:hover .art{transform:scale(1.03)}.tile{overflow:hidden}
+.tile h3{padding:14px 16px 4px;font-size:1.25rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tile:hover h3{color:var(--accent)}.tile p{margin:0;padding:0 16px 16px;font-size:.88rem;color:var(--muted)}
+.fall{background:#B4400F}.winter{background:#1B5FA8}.spring{background:#2A7D4B}.all{background:var(--primary)}
+.center{text-align:center;margin-top:32px}
+.commit{display:grid;gap:20px;grid-template-columns:repeat(4,1fr);margin:32px 0 0;padding:0;list-style:none}
+.commit li{border-top:4px solid var(--accent);padding-top:12px}.commit strong{font:600 1.15rem var(--fh);color:var(--head);display:block}
+.season{padding:40px 0;border-top:1px solid var(--border)}
+.season .wrap>h2{font-size:2.25rem;text-transform:uppercase;display:flex;align-items:center;gap:14px}
+.season .wrap>h2:before{content:"";width:14px;height:36px;background:var(--c)}
+.sports{display:grid;gap:24px;grid-template-columns:repeat(2,1fr)}
+.sports div{background:var(--card);border-radius:8px;box-shadow:var(--shadow);padding:20px;border-left:5px solid var(--c)}
+.sports h3{font-size:1.4rem}.sports p{margin:0 0 .6em;font-size:.95rem}
+.sports b{color:var(--head)}
+.tw{overflow-x:auto;margin-top:24px}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--card)}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border)}
+th{background:var(--primary);color:#fff;font:500 1rem var(--fh);letter-spacing:.05em}
+td.na{color:var(--muted)}
+.note{color:var(--muted);font-size:.88rem;font-style:italic}
+.steps{counter-reset:s;list-style:none;padding:0;margin:32px 0 0;display:grid;gap:16px;grid-template-columns:repeat(5,1fr)}
+.steps li{counter-increment:s;background:var(--card);border-radius:8px;box-shadow:var(--shadow);padding:16px;font-size:.9rem}
+.steps li:before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font:600 1.1rem var(--fh);margin-bottom:10px}
+.steps b{display:block;font:600 1.1rem var(--fh);color:var(--head);margin-bottom:4px}
+.two{display:grid;gap:40px;grid-template-columns:1fr 1fr}
+.two ul{padding-left:20px}
+.card{background:var(--card);border-radius:8px;box-shadow:var(--shadow);padding:24px}
+.card dl{margin:0}.card dt{font:600 .85rem var(--fh);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:12px}.card dd{margin:0;font-style:italic}
+footer{background:var(--primary);color:#fff;padding:48px 0 24px}
+footer a{color:#fff}
+.fg{display:grid;gap:32px;grid-template-columns:1.2fr 1.2fr 1fr}
+footer h2{color:#fff;font-size:1.2rem}
+.ph{display:inline-grid;place-items:center;border:2px dashed #fff7;border-radius:4px;padding:10px 16px;font-size:.75rem;margin:0 8px 8px 0;min-height:44px}
+.bot{margin-top:32px;border-top:1px solid #ffffff33;padding-top:16px;font-size:.75rem;opacity:.8}
+#top{position:fixed;right:16px;bottom:16px;width:48px;height:48px;background:var(--accent);color:#fff;border:0;border-radius:4px;font-size:1.4rem;cursor:pointer;display:none;z-index:40}
+#top.on{display:block}
+#a11y{position:fixed;left:0;top:45%;z-index:60}
+#a11y>button{background:var(--focus);color:#000;border:0;border-radius:0 6px 6px 0;padding:12px;font:600 .9rem var(--fh);min-height:44px;cursor:pointer}
+#panel{display:none;background:var(--card);box-shadow:var(--menu);border-radius:0 8px 8px 0;padding:8px;width:210px;position:absolute;left:0;bottom:48px}
+#panel.on{display:block}
+#panel button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--border);padding:9px 8px;font:.88rem var(--fb);color:var(--text);cursor:pointer;min-height:40px}
+#panel button[aria-pressed=true]{background:var(--primary);color:#fff}
+html.a11y-gray{filter:grayscale(1)}
+html.a11y-hc body{background:#000;color:#fff}html.a11y-hc *{background-color:#000!important;color:#ff0!important;border-color:#ff0!important}
+html.a11y-neg{filter:invert(1) hue-rotate(180deg)}
+html.a11y-light *{background:#fff!important;color:#000!important}
+html.a11y-ul a{text-decoration:underline!important}
+html.a11y-font *{font-family:Arial,Verdana,sans-serif!important}
+@media(max-width:959px){.grid{grid-template-columns:repeat(2,1fr)}.commit{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.two,.fg{grid-template-columns:1fr}}
+@media(max-width:599px){.grid,.sports,.commit,.steps{grid-template-columns:1fr}.hero{padding:48px 0 40px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.tile:hover .art{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#top-of-page"><i>[Your Logo]</i>Athletics Department</a>
+<button id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Primary">
+<ul>
+<li><a href="#top-of-page">Home</a></li>
+<li><button aria-expanded="false">About</button><ul class="dd"><li><a href="#commitment">Our Commitment</a></li><li><a href="#join">How to Join</a></li><li><a href="#expect">Expectations</a></li><li><a href="#contact">Contact Us</a></li></ul></li>
+<li><button aria-expanded="false">Students / Parents</button><ul class="dd"><li><a href="#join">Registration Steps</a></li><li><a href="#expect">Athlete &amp; Family Expectations</a></li><li><a href="#glance">Participation at a Glance</a></li></ul></li>
+<li><button aria-expanded="false">Sports</button>
+<div class="dd mega"><div><h3>Fall</h3><ul><li><a href="#fall">Soccer</a></li><li><a href="#fall">Cross Country</a></li><li><a href="#fall">Volleyball</a></li><li><a href="#fall">Field Hockey</a></li><li><a href="#fall">Football</a></li></ul></div>
+<div><h3>Winter</h3><ul><li><a href="#winter">Basketball</a></li><li><a href="#winter">Swimming &amp; Diving</a></li><li><a href="#winter">Wrestling</a></li><li><a href="#winter">Gymnastics</a></li><li><a href="#winter">Ice Hockey</a></li></ul></div>
+<div><h3>Spring</h3><ul><li><a href="#spring">Baseball / Softball</a></li><li><a href="#spring">Track &amp; Field</a></li><li><a href="#spring">Lacrosse</a></li><li><a href="#spring">Tennis</a></li><li><a href="#spring">Golf</a></li></ul></div></div></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="util"><a class="btn out" href="#contact">Member Login</a></div>
+</div>
+</header>
+
+<main id="main">
+<div id="top-of-page" class="hero"><div class="wrap">
+<h1>Teams for boys and girls</h1>
+<p>We welcome students, families, and supporters to our athletics program. Our teams give young athletes of every experience level the chance to develop their skills, build lasting friendships, and represent our community with pride.</p>
+<p>Participation fosters teamwork, discipline, perseverance, and sportsmanship. Whether a student is new to organized sports or a seasoned competitor, there is a place for them here.</p>
+<a class="btn" href="#join">How to join</a> <a class="btn sec" href="#glance">See all sports</a>
+</div></div>
+
+<section aria-labelledby="seasons-h"><div class="wrap">
+<h2 class="sh" id="seasons-h">Choose a season</h2>
+<div class="grid">
+<a class="tile" href="#fall"><div class="art fall">Fall</div><h3>Fall season: soccer, cross country, volleyball, field hockey and football</h3><p>View fall teams</p></a>
+<a class="tile" href="#winter"><div class="art winter">Winter</div><h3>Winter season: basketball, swimming, wrestling, gymnastics and ice hockey</h3><p>View winter teams</p></a>
+<a class="tile" href="#spring"><div class="art spring">Spring</div><h3>Spring season: baseball, softball, track, lacrosse, tennis and golf</h3><p>View spring teams</p></a>
+<a class="tile" href="#join"><div class="art all">Join</div><h3>Ready to play? Follow five steps to get on the roster</h3><p>Learn more</p></a>
+</div>
+<div class="center"><a class="btn" href="#glance">View all sports</a></div>
+</div></section>
+
+<section class="band" id="commitment"><div class="wrap">
+<h2 class="sh">Our commitment</h2>
+<ul class="commit">
+<li><strong>Equal opportunity</strong>Boys and girls programs receive the same dedication, quality coaching, and support.</li>
+<li><strong>Inclusion</strong>Every student is encouraged to participate, regardless of background or ability.</li>
+<li><strong>Sportsmanship</strong>We expect respect toward teammates, opponents, officials, and spectators.</li>
+<li><strong>Student well-being</strong>Academic success, health, and safety always come first.</li>
+</ul></div></section>
+
+<div class="season" id="fall" style="--c:#B4400F"><div class="wrap"><h2>Fall season</h2><div class="sports">
+<div><h3>Soccer</h3><p><b>Boys Soccer:</b> A fast-paced, skill-focused program emphasizing teamwork, fitness, and tactical understanding.</p><p><b>Girls Soccer:</b> A competitive and supportive program that develops technical ability and confidence on the field.</p></div>
+<div><h3>Cross Country</h3><p><b>Boys Cross Country:</b> Athletes build endurance and mental toughness while competing in invitationals and championship meets.</p><p><b>Girls Cross Country:</b> Runners of all paces train together, setting personal goals and celebrating individual progress.</p></div>
+<div><h3>Volleyball</h3><p><b>Girls Volleyball:</b> A spirited program focused on communication, quick reflexes, and cooperative play.</p><p><b>Boys Volleyball:</b> An emerging program that introduces athletes to the fundamentals of serving, setting, and attacking.</p></div>
+<div><h3>Field Hockey and Football</h3><p><b>Girls Field Hockey:</b> Athletes learn stick skills, strategy, and the value of precise teamwork.</p><p><b>Boys Football:</b> A structured program that teaches physical conditioning, strategy, and leadership, with a strong emphasis on safety.</p></div>
+</div></div></div>
+
+<div class="season" id="winter" style="--c:#1B5FA8"><div class="wrap"><h2>Winter season</h2><div class="sports">
+<div><h3>Basketball</h3><p><b>Boys Basketball:</b> Players refine their shooting, defense, and court awareness through disciplined practice and competitive games.</p><p><b>Girls Basketball:</b> A dynamic program that builds fundamentals, confidence, and a strong team identity.</p></div>
+<div><h3>Swimming and Diving</h3><p><b>Boys Swimming and Diving:</b> Swimmers and divers train for individual and relay events in a focused, encouraging environment.</p><p><b>Girls Swimming and Diving:</b> Athletes pursue personal bests while supporting one another at every meet.</p></div>
+<div><h3>Wrestling and Gymnastics</h3><p><b>Boys Wrestling:</b> A program that emphasizes technique, discipline, and respect for one's opponent.</p><p><b>Girls Gymnastics:</b> Athletes develop strength, flexibility, and poise across vault, bars, beam, and floor.</p></div>
+<div><h3>Ice Hockey</h3><p><b>Boys Ice Hockey:</b> Players develop skating, puck handling, and team strategy.</p><p><b>Girls Ice Hockey:</b> An inclusive and competitive program for athletes who love the speed and teamwork of the game.</p></div>
+</div></div></div>
+
+<div class="season" id="spring" style="--c:#2A7D4B"><div class="wrap"><h2>Spring season</h2><div class="sports">
+<div><h3>Baseball and Softball</h3><p><b>Boys Baseball:</b> Players grow in hitting, fielding, pitching, and game awareness.</p><p><b>Girls Softball:</b> A welcoming program that teaches fundamentals while fostering strong team bonds.</p></div>
+<div><h3>Track and Field</h3><p><b>Boys Track and Field:</b> Athletes compete in sprints, distance events, relays, jumps, and throws.</p><p><b>Girls Track and Field:</b> Athletes pursue excellence in a wide range of events, with coaching tailored to every skill level.</p></div>
+<div><h3>Lacrosse</h3><p><b>Boys Lacrosse:</b> A fast, physical sport that rewards agility, coordination, and teamwork.</p><p><b>Girls Lacrosse:</b> An energetic program that emphasizes stick skills, strategy, and sportsmanship.</p></div>
+<div><h3>Tennis and Golf</h3><p><b>Boys Tennis:</b> Players develop technique and match strategy in singles and doubles competition.</p><p><b>Girls Tennis:</b> Athletes build skill, focus, and resilience through regular practice and team matches.</p><p><b>Boys and Girls Golf:</b> Open to all students, with instruction in the fundamentals of the game and course etiquette.</p></div>
+</div></div></div>
+
+<section class="band" id="glance"><div class="wrap">
+<h2 class="sh">Participation at a glance</h2>
+<div class="tw"><table><thead><tr><th>Sport</th><th>Boys</th><th>Girls</th><th>Season</th></tr></thead><tbody>
+<tr><td>Soccer</td><td>Yes</td><td>Yes</td><td>Fall</td></tr>
+<tr><td>Cross Country</td><td>Yes</td><td>Yes</td><td>Fall</td></tr>
+<tr><td>Volleyball</td><td>Yes</td><td>Yes</td><td>Fall</td></tr>
+<tr><td>Football</td><td>Yes</td><td class="na">N/A</td><td>Fall</td></tr>
+<tr><td>Field Hockey</td><td class="na">N/A</td><td>Yes</td><td>Fall</td></tr>
+<tr><td>Basketball</td><td>Yes</td><td>Yes</td><td>Winter</td></tr>
+<tr><td>Swimming and Diving</td><td>Yes</td><td>Yes</td><td>Winter</td></tr>
+<tr><td>Wrestling</td><td>Yes</td><td class="na">N/A</td><td>Winter</td></tr>
+<tr><td>Gymnastics</td><td class="na">N/A</td><td>Yes</td><td>Winter</td></tr>
+<tr><td>Ice Hockey</td><td>Yes</td><td>Yes</td><td>Winter</td></tr>
+<tr><td>Baseball / Softball</td><td>Baseball</td><td>Softball</td><td>Spring</td></tr>
+<tr><td>Track and Field</td><td>Yes</td><td>Yes</td><td>Spring</td></tr>
+<tr><td>Lacrosse</td><td>Yes</td><td>Yes</td><td>Spring</td></tr>
+<tr><td>Tennis</td><td>Yes</td><td>Yes</td><td>Spring</td></tr>
+<tr><td>Golf</td><td>Yes</td><td>Yes</td><td>Spring</td></tr>
+</tbody></table></div>
+<p class="note">Team offerings may vary by year based on student interest, facilities, and staffing.</p>
+</div></section>
+
+<section id="join"><div class="wrap">
+<h2 class="sh">How to join</h2>
+<ol class="steps">
+<li><b>Review the schedule</b>Identify the sports and seasons that interest you.</li>
+<li><b>Get a physical</b>A current physical from a licensed health provider is required.</li>
+<li><b>Submit forms</b>Parent or guardian consent and emergency contact information must be on file.</li>
+<li><b>Attend a meeting or tryout</b>Coaches will share expectations, schedules, and evaluation details.</li>
+<li><b>Meet eligibility</b>Students are expected to remain in good academic standing.</li>
+</ol></div></section>
+
+<section class="band" id="expect"><div class="wrap two">
+<div><h2>Expectations for athletes and families</h2>
+<ul><li>Attend practices and games consistently and arrive on time.</li><li>Communicate respectfully with coaches, teammates, and officials.</li><li>Maintain academic responsibilities alongside athletic commitments.</li><li>Support all teams, boys and girls alike, with enthusiasm and good conduct.</li></ul></div>
+<div class="card" id="contact"><h2>Contact the Athletics Office</h2>
+<p>For questions about teams, schedules, or registration, please get in touch.</p>
+<dl><dt>Athletic Director</dt><dd>[Name]</dd><dt>Email</dt><dd>[Email Address]</dd><dt>Phone</dt><dd>[Phone Number]</dd><dt>Office Hours</dt><dd>[Days and Times]</dd></dl>
+<p style="margin-top:16px"><strong>We look forward to welcoming you to the team.</strong></p></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><span class="ph">[Your Logo Here]</span><h2>Athletics Department</h2><p>Teams for boys and girls, every season.</p></div>
+<div><h2>Contact</h2><p>Athletic Director: [Name]<br>Email: [Email Address]<br>Phone: [Phone Number]<br>Office Hours: [Days and Times]</p></div>
+<div><h2>Partners</h2><span class="ph">[Partner Logo]</span><span class="ph">[Partner Logo]</span></div>
+</div>
+<div class="bot">Powered by <span class="ph" style="min-height:0;padding:2px 8px;margin:0">[Platform Logo]</span> | <a href="#">Policies</a> | <a href="#">Web Admin</a></div>
+</div></footer>
+
+<button id="top" aria-label="Back to top">&#8963;</button>
+
+<div id="a11y">
+<div id="panel" role="group" aria-label="Accessibility tools">
+<button data-a="inc">Increase text</button><button data-a="dec">Decrease text</button>
+<button data-c="a11y-gray" aria-pressed="false">Grayscale</button>
+<button data-c="a11y-hc" aria-pressed="false">High contrast</button>
+<button data-c="a11y-neg" aria-pressed="false">Negative contrast</button>
+<button data-c="a11y-light" aria-pressed="false">Light background</button>
+<button data-c="a11y-ul" aria-pressed="false">Links underline</button>
+<button data-c="a11y-font" aria-pressed="false">Readable font</button>
+<button data-a="reset">Reset</button>
+</div>
+<button id="a11yb" aria-expanded="false" aria-controls="panel">Accessibility</button>
+</div>
+
+<script>
+(function(){
+var H=document.documentElement,K='a11y-prefs',st={c:[],z:100};
+function save(){try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}}
+try{var s=JSON.parse(localStorage.getItem(K));if(s&&s.c)st=s}catch(e){}
+function apply(){H.style.fontSize=st.z+'%';
+document.querySelectorAll('#panel [data-c]').forEach(function(b){var on=st.c.indexOf(b.dataset.c)>-1;H.classList.toggle(b.dataset.c,on);b.setAttribute('aria-pressed',on)})}
+apply();
+document.getElementById('panel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+if(b.dataset.c){var i=st.c.indexOf(b.dataset.c);i>-1?st.c.splice(i,1):st.c.push(b.dataset.c)}
+else if(b.dataset.a=='inc')st.z=Math.min(150,st.z+10);
+else if(b.dataset.a=='dec')st.z=Math.max(80,st.z-10);
+else st={c:[],z:100};
+apply();save()});
+var ab=document.getElementById('a11yb'),pn=document.getElementById('panel');
+ab.onclick=function(){var o=pn.classList.toggle('on');ab.setAttribute('aria-expanded',o)};
+var nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.onclick=function(){var o=nav.classList.toggle('show');bg.setAttribute('aria-expanded',o)};
+function closeAll(){nav.querySelectorAll('li.open').forEach(function(l){l.classList.remove('open');l.querySelector('button').setAttribute('aria-expanded','false')})}
+nav.querySelectorAll('li>button').forEach(function(b){var li=b.parentNode;
+b.onclick=function(){var o=li.classList.contains('open');closeAll();if(!o){li.classList.add('open');b.setAttribute('aria-expanded','true')}};
+if(matchMedia('(hover:hover)').matches)li.addEventListener('mouseenter',function(){if(innerWidth>960){closeAll();li.classList.add('open');b.setAttribute('aria-expanded','true')}});
+li.addEventListener('mouseleave',function(){if(innerWidth>960)closeAll()})});
+document.addEventListener('keydown',function(e){if(e.key=='Escape'){closeAll();pn.classList.remove('on')}});
+nav.addEventListener('click',function(e){if(e.target.closest('.dd a')||e.target.closest('nav>ul>li>a')){closeAll();nav.classList.remove('show')}});
+var t=document.getElementById('top');
+addEventListener('scroll',function(){t.classList.toggle('on',scrollY>400)});
+t.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})};
+})();
+</script>
+</body>
+</html>
